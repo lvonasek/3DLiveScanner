@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+  -->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

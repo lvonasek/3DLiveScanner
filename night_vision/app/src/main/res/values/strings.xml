@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">ToF Viewer</string>
+  <string name="more">More</string>
+  <string name="scheme">Set ToF data mapping</string>
+  <string name="sleep">Monitor sleep activity</string>
+  <string name="sleep_airplane">You do not have your phone in airplane mode. Please enable airplane mode and open the function again.</string>
+  <string name="sleep_description">This function will capture a whole night as a 5 minute video to monitor your sleeping problems. Put your phone on a stable position showing your bed to the camera. The phone should be connected to a recharger. The display will be turned off automatically. In the morning finish the process by long tapping the display.</string>
+  <string name="vr">Virtual reality mode</string>
+  <string name="vr_description">This function require VR headset with a hole for the camera module. Before using it be sure you adjusted it using the arrow buttons for your eyes. Using the app without adjusting could damage your eyes!\n\nDO NOT USE THIS FUNCTION FOR ANY ILLEGAL ACTIVITY!</string>
+
+  <string-array name="scheme_variants">
+    <item>Red, Yellow/Green as IR confidence</item>
+    <item>Blue, Cyan/Blue as IR confidence</item>
+    <item>Green, White/Pink as IR confidence</item>
+    <item>Grayscale, no IR confidence</item>
+    <item>Oriented normalmap</item>
+  </string-array>
+</resources>

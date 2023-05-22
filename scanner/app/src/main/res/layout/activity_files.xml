@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_menu">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/settings"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#800099cc"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/position"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_position_small"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_share_small" />
+
+        <Button
+            android:id="@+id/rename"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_rename_small" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_delete_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="@string/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/info_text"
+            android:textAlignment="center"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/policy_accepted"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:text="@string/action_cancel"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/service_cancel"
+                android:background="@drawable/background_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_menu_action"
+        android:numColumns="3"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_menu_action"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:text="@string/capture"
+            android:layout_width="0dp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:id="@+id/add_button"
+            android:background="@drawable/background_button" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:background="@android:color/white"
+        android:id="@+id/view"/>
+
+</RelativeLayout>

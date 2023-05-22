@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/white" >
+
+        <TextView android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_sketchfab" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/model_name"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:maxLength="48"
+            android:imeOptions="flagNoExtractUi"
+            android:ems="10"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/description"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText_description"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="top"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="8"
+            android:maxLines="8"
+            android:maxLength="1024"
+            android:scrollbars="vertical"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/tags"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:imeOptions="flagNoExtractUi"
+            android:ems="10"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/upload"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

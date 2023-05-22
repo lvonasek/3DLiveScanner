@@ -1,0 +1,370 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <com.lvonasek.gles.GLESSurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"/>
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ar_hand_layout"
+        android:visibility="gone"
+        android:clipChildren="false">
+
+        <com.lvonasek.arcore3dscanner.main.HandMotionView
+            android:id="@+id/ar_hand_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_hand_phone"
+            android:scaleType="center"/>
+
+    </FrameLayout>
+
+    <com.lvonasek.arcore3dscanner.main.DistanceMeasuring
+        android:id="@+id/distance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top" />
+
+    <include layout="@layout/view_editor"/>
+
+    <LinearLayout
+        android:id="@+id/layout_wait"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:background="#B0000000"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/wait"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_undo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:background="#B0000000"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/undo_back_fast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\u00AB"
+            android:maxLines="1"
+            android:background="@drawable/background_button_red" />
+
+        <Button
+            android:id="@+id/undo_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\u2039"
+            android:maxLines="1"
+            android:background="@drawable/background_button_red" />
+
+        <Button
+            android:id="@+id/undo_fwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\u203A"
+            android:maxLines="1"
+            android:background="@drawable/background_button_red" />
+
+        <Button
+            android:id="@+id/undo_fwd_fast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\u00BB"
+            android:maxLines="1"
+            android:background="@drawable/background_button_red" />
+
+        <Button
+            android:id="@+id/undo_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@android:string/cancel"
+            android:maxLines="1"
+            android:background="@drawable/background_button" />
+
+        <Button
+            android:id="@+id/undo_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@android:string/ok"
+            android:maxLines="1"
+            android:background="@drawable/background_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_quickmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/layout_rec"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:background="#B0000000"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/photo_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/photo_mode"/>
+
+        <CheckBox
+            android:id="@+id/show_normals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/show_normals"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="#B0000000">
+
+            <ImageButton
+                android:id="@+id/undo_button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_undo"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/toggle_button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_pause"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_save"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/clear_button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_delete"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/view_button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_up"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:background="#B0000000">
+
+        <ImageButton
+            android:id="@+id/orbit_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_modeorbit"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/topview_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_mode2d"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/first_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_mode3d"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/cardboard_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:src="@drawable/ic_cardboard"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="#B0000000">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_memory"/>
+
+        <TextView
+            android:text=""
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/info_left"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:text=""
+            android:textSize="20dp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/info_right"/>
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_battery_0"
+            android:id="@+id/info_battery"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/infolog"
+        android:background="#B0000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_info"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        android:text=""
+        android:textSize="20dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/editor_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_editor"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/thumbnail_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_share"
+        android:text=""/>
+
+</RelativeLayout>

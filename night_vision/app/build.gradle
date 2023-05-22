@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 29
+        targetSdkVersion 30
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main.java.srcDirs += '../../common/record/'
+        main.java.srcDirs += '../../common/utils/'
+    }
+}
+
+dependencies {
+    implementation 'com.google.ar:core:1.23.0'
+    implementation 'org.jcodec:jcodec:0.2.3'
+    implementation 'org.jcodec:jcodec-android:0.2.3'
+    implementation files('src/main/libs/sdk-base-1.190.0.aar')
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="no_data">Nu există modele 3D</string>
+    <string name="migrating_data">Migrarea datelor într-un nou dosar, vă rugăm să așteptați…</string>
+    <string name="name_exists">Există deja un model cu acest nume.</string>
+    <string name="invalid_name">Nume de fișier incorect!</string>
+    <string name="delete">Ștergeți datele</string>
+    <string name="capture">Scanare</string>
+    <string name="settings">Setări</string>
+    <string name="scene_res">Alege rezoluția imaginii</string>
+    <string name="jump">Aplicația a detectat date nevalide de urmărire a mișcării. Vă rugăm să verificați dacă dispozitivul afișează poziția corectă și apoi faceți clic pe pictograma înregistrare pentru a continua scanarea.</string>
+    <string name="move">Mișcați dispozitivul pentru a începe scanarea.</string>
+    <string name="continue_question">Dorești să continui?</string>
+    <string name="info">Utilizând această aplicație ești de acord cu #BEGIN#politica de confidențialitate#END#.\n\n Toate datele vor fi salvate în folder-ul \"Models\" din memoria internă.</string>
+    <string name="share_via">Distribuiți prin intermediul</string>
+    <string name="postprocess">Postprocesează</string>
+    <string name="wait">Așteaptă te rog</string>
+    <string name="export">Exportare date</string>
+    <string name="folder_new">Dosar nou</string>
+    <string name="folder_up">(Dosar părinte)</string>
+    <string name="data_saved">Date salvate ca</string>
+    <string name="lowend_device">Dispozitivul dvs. nu este certificat cu Google Depth API. Este posibil ca performanța aplicației să fie limitată.</string>
+    <string name="permissions_required">Pentru funcționalitatea de scanare 3D sunt necesare permisiuni pentru cameră și stocare.</string>
+    <string name="policy_accepted">Am citit și accept politica de confidențialitate</string>
+    <string name="more_items">Mai multe articole</string>
+    <string name="upgrade">Actualizare</string>
+    <string name="upgrade_details">În comparație cu versiunea gratuită, versiunea cu plată oferă mai multe setări, fără reclame și posibilitatea de a captura un set de date. Cu ajutorul acesteia puteți:\n- exporta planul etajului\n- exporta pointcloud brut</string>
+    <string name="storage_bug">Aplicația a detectat că dispozitivul dvs. este afectat de o eroare Android care împiedică accesul la anumite date. Aplicația nu poate funcționa corect până când problema nu este rezolvată.\n\nAceastă problemă poate fi rezolvată doar manual.</string>
+    <string name="resolve_manually">Rezolvarea problemei</string>
+    <string name="show_normals">Afișați normalele</string>
+    <string name="photo_mode">Modul foto</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">Descriere:</string>
+    <string name="model_name">Numele modelului:</string>
+    <string name="sketchfab_dialog_title">Încărcați în Sketchfab</string>
+    <string name="sketchfab_pro">Rețineți că pentru dimensiuni de peste 100 MB este necesar un cont Sketchfab PRO, altfel încărcarea poate eșua.</string>
+    <string name="sketchfab_upload_ready">Modelul este comprimat și gata de încărcare!</string>
+    <string name="sketchfab_uploading">Încărcarea modelului în Sketchfab…</string>
+    <string name="tags">Etichete:</string>
+    <string name="upload">Încărcare</string>
+    <string name="upload_size_is">Dimensiunea totală de încărcat este</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">Analizați fotografiile înainte de texturare și asigurați-vă că sunt folosite numai fotografii bune.</string>
+    <string name="privacy_policy">Politica de confidențialitate</string>
+    <string name="sensor_usage">Utilizarea senzorilor</string>
+    <string name="scan_postprocess">Scanare postproces</string>
+    <string name="scan_visualisations">Vizualizări de scanare</string>
+    <string name="scan_parameters">Parametrii de scanare</string>
+    <string name="mode_realtime">Scanare interioară/exterioară</string>
+    <string name="mode_dataset">Capturarea dataset</string>
+    <string name="mode_face">Scanarea feței</string>
+    <string name="scan_single_room">Scanare cameră single</string>
+    <string name="scan_large_interior">Scanare interioară mare</string>
+    <string name="scan_exterior">Scanare exterioară</string>
+    <string name="export_floorplan">Exportați ca plan de etaj</string>
+    <string name="export_pointcloud">Exportați ca pointcloud</string>
+    <string name="export_model">Exportați ca model 3D</string>
+    <string name="profile_resolution">Rezoluție</string>
+    <string name="poisson">Reconstrucție Poisson</string>
+    <string name="poisson_summary">Activați algoritmul de postprocesare pentru a remedia găurile în geometria modelului, rețineți că acest algoritm nu funcționează bine cu spațiile deschise și poate face postprocesarea mai lungă.</string>
+    <string name="textures">Limitați numărul de texturi</string>
+    <string name="textures_summary">Limită cantitatea de texturi. Mai multe texturi oferă o calitate vizuală mai bună.</string>
+    <string-array name="textures_names">
+        <item>Textură unică</item>
+        <item>Max 4 texturi</item>
+        <item>Nu limitați</item>
+    </string-array>
+    <string name="anchor">Afișați ancorele în timpul scanării</string>
+    <string name="anchor_summary">Ancorele sunt utilizate pentru a stabiliza urmărirea poziției dispozitivului.</string>
+    <string name="grid">Afișați grila podelei</string>
+    <string name="grid_summary">Grila facilitează înțelegerea spațiului 3D.</string>
+    <string name="camera">Afișați datele camerei în timpul scanării</string>
+    <string name="camera_summary">Afișarea camerei produce informații suplimentare despre procesul de scanare, însă ar putea provoca supraîncălzirea dispozitivului și performanțe de scanare mai scăzute.</string>
+    <string name="offset">Adăugați offset la geometrie</string>
+    <string name="offset_summary">Adăugarea de offset la geometrie permite scanarea obiectelor subțiri din ambele părți. Această opțiune face geometria mai puțin precisă.</string>
+    <string name="depth_sensor">Utilizare senzor de profunzime</string>
+    <string name="depth_sensor_summary">Senzorul de adâncime activ este mai precis și scanează mai multe detalii.</string>
+    <string name="gps">Folosiți GPS pentru a marca poziția</string>
+    <string name="gps_summary">Folosind o etichetă GPS este posibil să se afișeze pe hartă unde a fost capturat modelul.</string>
+    <string name="fullhd">Capturați fotografii fullHD</string>
+    <string name="fullhd_summary">Capturarea fotografiilor fullHD în setul de date vă permite să utilizați datele din software-ul de fotogrametrie. Rețineți că această opțiune încetinește procesul de scanare.</string>
+    <string name="align_pose">Alinierea poziției dispozitivului</string>
+    <string name="align_pose_summary">Captează date după apăsarea unui buton, datele sunt texturate imediat.</string>
+    <string name="flash_light">Folosiți lanterna</string>
+    <string name="flash_light_summary">Lanterna facilitează scanarea în locuri întunecate.</string>
+    <string name="decimation">Reduceți numărul poligonului</string>
+    <string name="decimation_summary">Ca parte a postprocesării există un proces numit decimare care scade cantitatea de poligoane.</string>
+    <string-array name="decimation_names">
+        <item>Detaliu maxim</item>
+        <item>Optim pentru VR</item>
+        <item>Număr mic de poligoane</item>
+    </string-array>
+    <string name="limit">Limitați distanța de scanare</string>
+    <string name="limit_summary">Limitând distanța de scanare, este mai ușor să scanați doar o parte a obiectului și să filtrați datele de adâncime cu o precizie mai mică.</string>
+    <string-array name="limit_names">
+        <item>1 metru - numai obiecte</item>
+        <item>2 metri - cea mai bună precizie</item>
+        <item>4 metri - scanare rapidă</item>
+        <item>Fără limită de software</item>
+    </string-array>
+    <string name="noise">Filtru de zgomot</string>
+    <string name="noise_summary">Utilizarea filtrului de zgomot reduce cantitatea de geometrie greșită în scanare. Rețineți că scade viteza de scanare.</string>
+    <string-array name="noise_names">
+        <item>Fără filtru de zgomot</item>
+        <item>Filtru de zgomot normal</item>
+        <item>Filtru de zgomot agresiv</item>
+    </string-array>
+    <string name="clearing">Eliberarea spațiului</string>
+    <string name="clearing_summary">Această caracteristică șterge datele din scenă care erau vizibile doar temporar.</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">Culori</string>
+    <string name="editor_main_select">Selectează</string>
+    <string name="editor_main_transform">Transformă</string>
+    <string name="editor_main_edit">Editați</string>
+    <string name="editor_colors_contrast">Contrast</string>
+    <string name="editor_colors_gamma">Gamma</string>
+    <string name="editor_colors_saturation">Saturație</string>
+    <string name="editor_colors_tone">Ton</string>
+    <string name="editor_colors_reset">Resetare</string>
+    <string name="editor_select_all">Toate/Niciuna</string>
+    <string name="editor_select_object">Obiect</string>
+    <string name="editor_select_object_desc">Apasă pe obiectul pe care dorești să-l selectezi.</string>
+    <string name="editor_select_circle">Cerc</string>
+    <string name="editor_select_circle_desc">Creați un cerc de selecție prin tragerea unui cerc pe ecran.</string>
+    <string name="editor_select_rect">Dreptunghi</string>
+    <string name="editor_select_rect_desc">Creează un dreptunghi de selectare trăgând un dreptunghi pe ecran.</string>
+    <string name="editor_select_less">Mai puțin</string>
+    <string name="editor_select_more">Mai mult</string>
+    <string name="editor_transform_clone">Copiază</string>
+    <string name="editor_transform_delete">Șterge</string>
+    <string name="editor_transform_move">Mută</string>
+    <string name="editor_transform_rotate">Rotește</string>
+    <string name="editor_transform_scale">Scară</string>
+    <string name="editor_edit_undo">Desfaceți</string>
+    <string name="editor_edit_visualisation">Vizualizare</string>
+    <string name="editor_deselect">Deselectați</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">Anulați operațiunea</string>
+    <string name="enter_filename">Introduceți un nume de fișier</string>
+    <string name="failed">Procesarea a eșuat, iar datele scanate au fost pierdute!</string>
+    <string name="finished">Operațiune finalizată</string>
+    <string name="paused">Scanare pusă pe pauză</string>
+    <string name="postprocessing">Postprocesare model…</string>
+    <string name="saving">Salvare model…</string>
+    <string name="turn_off">Poți ieși din aplicație fără să pierzi datele.</string>
+    <string name="warning">Atenție</string>
+    <string name="working">Aplicația funcționează. Te rugăm nu stinge dispozitivul și nu inția altă aplicație de tip AR.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">Analiza fotografiilor</string>
+    <string name="event_features">Senzorul de mișcare a detectat probleme</string>
+    <string name="event_convert">Conversie date</string>
+    <string name="event_image">Procesare foto</string>
+    <string name="event_merge">Îmbinare rezultate</string>
+    <string name="event_process">Procesare model</string>
+    <string name="event_simplify">Simplificare geometrie</string>
+    <string name="event_unwrap">Despachetare texturi</string>
+    <string name="scan_discard">Această acțiune va elimina progresul scanării.</string>
+    <string name="scan_finish">Salvarea va finaliza scanarea.</string>
+    <string name="scan_rewind">Reîntoarceți procesul de scanare la o stare din care doriți să continuați.</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm – Încăpere mică</string>
+    <string name="scan_2cm">2 cm - Interior</string>
+    <string name="scan_4cm">4 cm - Exterior</string>
+    <string name="scan_8cm">8 cm – Scanare rapidă</string>
+    <string name="screenshot">Captură de ecran</string>
+    <string name="videoshot">Rotire video</string>
+
+    <string-array name="shares">
+        <item>Android dialog</item>
+        <item>Convertor online</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">Diametru</string>
+    <string name="fd_length">Lungime</string>
+    <string name="fd_volume">Volum</string>
+    <string name="fd_write_scan_desc">Descriere scanare</string>
+    <string name="fd_select_scan_type">Selectează tip de scanare</string>
+    <string name="fd_scan_type_trunk">Buștean</string>
+    <string name="fd_scan_type_stack">Stivă</string>
+    <string name="fd_scan_type_transport">Transport</string>
+    <string name="fd_scan_type_tree">Arbore</string>
+    <string name="fd_scan_type_other">Altele</string>
+    <string name="fd_scan_limit">Numărul maxim de scanări atins. Ștergeți unele scanări pentru a continua sau contactați office@forestdesign.ro pentru mai multe informații.</string>
+</resources>

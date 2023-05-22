@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="no_data">没有3D模型</string>
+    <string name="migrating_data">将数据迁移到一个新的文件夹，请等待…</string>
+    <string name="name_exists">一个模型已经具有相同的名称</string>
+    <string name="invalid_name">文件名非法！</string>
+    <string name="delete">删除数据</string>
+    <string name="capture">扫描</string>
+    <string name="settings">设置</string>
+    <string name="scene_res">选择拍摄分辨率</string>
+    <string name="jump">该应用检测到无效的运动跟踪数据。 请检查设备是否显示正确的位置，然后单击“记录”图标以继续扫描。</string>
+    <string name="move">移动设备以开始扫描</string>
+    <string name="continue_question">您确认要删除吗?</string>
+    <string name="info">使用这个APP您同意#BEGIN#隐私条例#END#.\n\n所有的数据将会被储存在 \"Models\" 手机内部文件夹.</string>
+    <string name="share_via">分享</string>
+    <string name="postprocess">建立模型</string>
+    <string name="wait">请等待</string>
+    <string name="export">汇出资料</string>
+    <string name="folder_new">新建文件夹</string>
+    <string name="folder_up">(上层资料夹)</string>
+    <string name="data_saved">数据另存为</string>
+    <string name="lowend_device">你的设备没有通过谷歌深度API的认证。该应用程序的性能可能受到限制。</string>
+    <string name="permissions_required">对于3D扫描功能，需要摄像头和存储权限。</string>
+    <string name="policy_accepted">我阅读并接受隐私政策</string>
+    <string name="more_items">更多项目</string>
+    <string name="upgrade">升级</string>
+    <string name="upgrade_details">与免费版相比，付费版提供了更多的设置，没有广告，并有可能捕获数据集。使用它，你可以：\n- 导出平面图\n- 导出原始点云。</string>
+    <string name="storage_bug">该应用程序已经检测到您的设备受到了一个安卓错误的影响，该错误阻止了对某些数据的访问。在问题得到解决之前，该应用程序无法正常工作。这个问题只能手动解决。</string>
+    <string name="resolve_manually">解决问题</string>
+    <string name="show_normals">显示法线</string>
+    <string name="photo_mode">照片模式</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">描述:</string>
+    <string name="model_name">型号名称:</string>
+    <string name="sketchfab_dialog_title">上载到Sketchfab</string>
+    <string name="sketchfab_pro">请注意，如果大小超过100 MB，则需要一个Sketchfab PRO帐户，否则上传可能会失败。</string>
+    <string name="sketchfab_upload_ready">模型已压缩，可以上传！</string>
+    <string name="sketchfab_uploading">将模型上传到Sketchfab…</string>
+    <string name="tags">标签:</string>
+    <string name="upload">上载</string>
+    <string name="upload_size_is">要上传的总大小为</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">在贴图前分析照片，确保只使用好的照片。</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="sensor_usage">传感器使用</string>
+    <string name="scan_postprocess">扫描后处理</string>
+    <string name="scan_visualisations">扫描可视化</string>
+    <string name="scan_parameters">扫描参数</string>
+    <string name="mode_realtime">室内/室外扫描</string>
+    <string name="mode_dataset">采集数据集</string>
+    <string name="mode_face">脸部扫描</string>
+    <string name="scan_single_room">单间扫描</string>
+    <string name="scan_large_interior">大型内部扫描</string>
+    <string name="scan_exterior">外部扫描</string>
+    <string name="export_floorplan">输出为平面图</string>
+    <string name="export_pointcloud">导出为点云</string>
+    <string name="export_model">输出为3D模型</string>
+    <string name="profile_resolution">决议</string>
+    <string name="poisson">泊松重建</string>
+    <string name="poisson_summary">启用后处理算法以修复模型几何中的孔，请注意，该算法不适用于开放空间，并且可以使后处理时间更长。</string>
+    <string name="textures">限制纹理数量</string>
+    <string name="textures_summary">限制纹理数量。 更多的纹理可提供更好的视觉质量。</string>
+    <string-array name="textures_names">
+        <item>单一纹理</item>
+        <item>最多4个纹理</item>
+        <item>不限</item>
+    </string-array>
+    <string name="anchor">在扫描过程中显示锚点</string>
+    <string name="anchor_summary">锚用于稳定跟踪设备位置。</string>
+    <string name="grid">展示地板网格</string>
+    <string name="grid_summary">网格使您更容易理解3D空间。</string>
+    <string name="camera">在扫描过程中显示相机数据</string>
+    <string name="camera_summary">显示相机会产生有关扫描过程的其他信息，但是可能会导致设备过热并降低扫描性能。</string>
+    <string name="offset">为几何图形添加偏移量</string>
+    <string name="offset_summary">向几何图形添加偏移量可以从两侧扫描薄对象。 此选项使几何形状精度降低。</string>
+    <string name="depth_sensor">使用距离传感器</string>
+    <string name="depth_sensor_summary">主动式深度传感器更加精确，并且可以扫描更多细节。</string>
+    <string name="gps">使用GPS标记位置</string>
+    <string name="gps_summary">使用GPS标签可以在地图上显示捕获模型的位置。</string>
+    <string name="fullhd">捕获全高清照片</string>
+    <string name="fullhd_summary">将全高清照片捕获到数据集中，可以使用摄影测量软件中的数据。 请注意，此选项会减慢扫描过程。</string>
+    <string name="align_pose">对准装置的姿势</string>
+    <string name="align_pose_summary">调整设备姿势以增加纹理质量。 此选项使捕获速度慢得多。</string>
+    <string name="flash_light">使用手电筒</string>
+    <string name="flash_light_summary">手电筒使在暗处的扫描更加容易。</string>
+    <string name="decimation">减少多边形数量</string>
+    <string name="decimation_summary">作为后处理的一部分，存在一个称为抽取的过程，该过程可减少多边形的数量。</string>
+    <string-array name="decimation_names">
+        <item>最大细节</item>
+        <item>最适合VR</item>
+        <item>低多边形数</item>
+    </string-array>
+    <string name="limit">极限扫描距离</string>
+    <string name="limit_summary">通过限制扫描距离，可以更轻松地仅扫描部分对象并以较低的精度过滤远深度数据。</string>
+    <string-array name="limit_names">
+        <item>1米-仅限物体</item>
+        <item>2米-最佳精度</item>
+        <item>4米-快速扫描</item>
+        <item>无软件限制</item>
+    </string-array>
+    <string name="noise">噪音过滤器</string>
+    <string name="noise_summary">使用噪声过滤器可以减少扫描中错误几何形状的数量。 请注意，它会降低扫描速度。</string>
+    <string-array name="noise_names">
+        <item>无噪音过滤器</item>
+        <item>普通噪音过滤器</item>
+        <item>激进的噪声过滤器</item>
+    </string-array>
+    <string name="clearing">空間清理</string>
+    <string name="clearing_summary">此功能從場景中清除僅臨時可見的數據。</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">颜色</string>
+    <string name="editor_main_select">选择</string>
+    <string name="editor_main_transform">转换视角</string>
+    <string name="editor_main_edit">编辑</string>
+    <string name="editor_colors_contrast">对比度</string>
+    <string name="editor_colors_gamma">伽马</string>
+    <string name="editor_colors_saturation">饱和度</string>
+    <string name="editor_colors_tone">色域</string>
+    <string name="editor_colors_reset">重置</string>
+    <string name="editor_select_all">全选/取消</string>
+    <string name="editor_select_object">对象</string>
+    <string name="editor_select_object_desc">点击您想选择的对象.</string>
+    <string name="editor_select_circle">圈子</string>
+    <string name="editor_select_circle_desc">在屏幕上拖动一个圆圈来创建选择圈。</string>
+    <string name="editor_select_rect">矩形</string>
+    <string name="editor_select_rect_desc">通过拖拽在屏幕上创建矩形.</string>
+    <string name="editor_select_less">缩小</string>
+    <string name="editor_select_more">放大</string>
+    <string name="editor_transform_clone">复制</string>
+    <string name="editor_transform_delete">删除</string>
+    <string name="editor_transform_move">移动</string>
+    <string name="editor_transform_rotate">旋转</string>
+    <string name="editor_transform_scale">缩放</string>
+    <string name="editor_edit_undo">撤销</string>
+    <string name="editor_edit_visualisation">视觉化</string>
+    <string name="editor_deselect">取消选择</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">取消进程</string>
+    <string name="enter_filename">输入文件名</string>
+    <string name="failed">处理失败，扫描数据丢失!</string>
+    <string name="finished">处理结束</string>
+    <string name="paused">暂停扫描</string>
+    <string name="postprocessing">计算模型…</string>
+    <string name="saving">保存模型…</string>
+    <string name="turn_off">你可以退出APP且不丢失任何数据.</string>
+    <string name="warning">警告</string>
+    <string name="working">这个APP正在运行，请不要关机或运行其他的AR软件.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">图片分析</string>
+    <string name="event_features">动作追踪发现异常</string>
+    <string name="event_convert">转换数据</string>
+    <string name="event_image">处理相片</string>
+    <string name="event_merge">融合结果</string>
+    <string name="event_process">处理模型</string>
+    <string name="event_simplify">简化几何体</string>
+    <string name="event_unwrap">非闭合特征</string>
+    <string name="scan_discard">此操作將放棄掃描進度。</string>
+    <string name="scan_finish">保存將完成掃描。</string>
+    <string name="scan_rewind">将扫描过程倒退到您要继续的状态。</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm - 适合扫描小房间</string>
+    <string name="scan_2cm">2 cm - 适合扫描模型内表面</string>
+    <string name="scan_4cm">4 cm - 适合扫描模型外表面</string>
+    <string name="scan_8cm">8 cm - 快速扫描</string>
+    <string name="screenshot">屏幕截图</string>
+    <string name="videoshot">旋转的视频</string>
+
+    <string-array name="shares">
+        <item>手机内置</item>
+        <item>在线转换器</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">直径</string>
+    <string name="fd_length">长度</string>
+    <string name="fd_volume">卷</string>
+    <string name="fd_write_scan_desc">写扫描</string>
+    <string name="fd_select_scan_type">选择扫描类型</string>
+    <string name="fd_scan_type_trunk">斯塔姆</string>
+    <string name="fd_scan_type_stack">斯托斯</string>
+    <string name="fd_scan_type_transport">运输</string>
+    <string name="fd_scan_type_tree">树</string>
+    <string name="fd_scan_type_other">其他</string>
+    <string name="fd_scan_limit">已达到最大的扫描量。删除一些扫描来继续，或联系office@forestdesign.ro，以获得更多信息。</string>
+</resources>

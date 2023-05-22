@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimation_values">
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="limit_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="noise_values">
+        <item>1</item>
+        <item>9</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="profile_resolution_names">
+        <item>@string/scan_1cm</item>
+        <item>@string/scan_2cm</item>
+        <item>@string/scan_4cm</item>
+        <item>@string/scan_8cm</item>
+    </string-array>
+
+    <string-array name="profile_resolution_values">
+        <item>0.01</item>
+        <item>0.02</item>
+        <item>0.04</item>
+        <item>0.08</item>
+    </string-array>
+
+    <string-array name="textures_values">
+        <item>1</item>
+        <item>4</item>
+        <item>-1</item>
+    </string-array>
+</resources>

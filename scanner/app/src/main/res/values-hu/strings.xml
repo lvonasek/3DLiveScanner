@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="no_data">Nincsenek 3D-s modellek</string>
+    <string name="migrating_data">Az adatok áttelepítése egy új mappába, kérjük várjon…</string>
+    <string name="name_exists">Egy modell a nevével van.</string>
+    <string name="invalid_name">Rossz a fájl neve!</string>
+    <string name="delete">Adatok törlése</string>
+    <string name="capture">Szkennelés</string>
+    <string name="settings">Beállítások</string>
+    <string name="scene_res">Válasszdd ki a felbontást</string>
+    <string name="jump">Az alkalmazás érvénytelen mozgáskövetési adatokat észlelt. Kérjük, ellenőrizze, hogy az eszköz megfelelő helyzetben van-e, majd kattintson a felvétel ikonra a szkennelés folytatásához.</string>
+    <string name="move">Vidd körbe az eszközt a tárgy körül!</string>
+    <string name="continue_question">Folytatni akarod?</string>
+    <string name="info">Az app használatával elfogadod a #BEGIN#privacy policy#END#.\n\nAz összes adat el lesz mentve a \"Models\" mappába a tárhelyben.</string>
+    <string name="share_via">Megosztás</string>
+    <string name="postprocess">Postprocess</string>
+    <string name="wait">Kérlek várj!</string>
+    <string name="export">Adatok exportálása</string>
+    <string name="folder_new">Új mappa</string>
+    <string name="folder_up">(Szülő mappa)</string>
+    <string name="data_saved">Az adatok elmentve</string>
+    <string name="lowend_device">Az Ön készüléke nem rendelkezik a Google Depth API tanúsítványával. Az alkalmazás teljesítménye korlátozott lehet.</string>
+    <string name="permissions_required">A 3D szkennelési funkcióhoz a kamera és a tárolási engedélyek szükségesek.</string>
+    <string name="policy_accepted">Elolvastam és elfogadom az adatvédelmi szabályzatot</string>
+    <string name="more_items">További tételek</string>
+    <string name="upgrade">Fejlesztés</string>
+    <string name="upgrade_details">Az ingyenes verzióhoz képest a fizetős változat több beállítást kínál, nincs reklám és lehetőség van adathalmaz rögzítésére. Ennek segítségével:\n- alaprajz exportálása\n- nyers pontfelhő exportálása</string>
+    <string name="storage_bug">Az alkalmazás észlelte, hogy az Ön készülékét egy olyan Android-hiba érinti, amely megakadályozza a hozzáférést bizonyos adatokhoz. Az alkalmazás nem tud megfelelően működni, amíg a probléma meg nem oldódik.\n\nEz a probléma csak manuálisan oldható meg.</string>
+    <string name="resolve_manually">A probléma megoldása</string>
+    <string name="show_normals">Normálok megjelenítése</string>
+    <string name="photo_mode">Fotó üzemmód</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">Leírás:</string>
+    <string name="model_name">Modell név:</string>
+    <string name="sketchfab_dialog_title">Feltöltés a Sketchfabbe</string>
+    <string name="sketchfab_pro">Ne feledje, hogy 100 MB feletti mérethez Sketchfab PRO fiókra van szükség, különben a feltöltés sikertelen lehet.</string>
+    <string name="sketchfab_upload_ready">A modell tömörítve van és feltöltésre kész!</string>
+    <string name="sketchfab_uploading">A modell feltöltése a Sketchfab-ba…</string>
+    <string name="tags">Címkék:</string>
+    <string name="upload">Feltöltés</string>
+    <string name="upload_size_is">A feltöltendő teljes méret</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">Textúrázás előtt elemezze a fényképeket, és biztosítsa, hogy csak jó fényképeket használjon.</string>
+    <string name="privacy_policy">Adatvédelmi szabályzat</string>
+    <string name="sensor_usage">Az érzékelők használata</string>
+    <string name="scan_postprocess">Beolvasás utófeldolgozás</string>
+    <string name="scan_visualisations">Vizualizációk beolvasása</string>
+    <string name="scan_parameters">Szkennelési paraméterek</string>
+    <string name="mode_realtime">Beltéri/kültéri szkennelés</string>
+    <string name="mode_dataset">Dataset rögzítés</string>
+    <string name="mode_face">Arc szkennelés</string>
+    <string name="scan_single_room">Egyágyas szoba szkennelése</string>
+    <string name="scan_large_interior">Nagy belső szkennelés</string>
+    <string name="scan_exterior">Külső szkennelés</string>
+    <string name="export_floorplan">Exportálás alaprajzként</string>
+    <string name="export_pointcloud">Exportálás pointcloud</string>
+    <string name="export_model">Exportálás 3D modellként</string>
+    <string name="profile_resolution">Felbontás</string>
+    <string name="poisson">Rekonstrukció elemzése</string>
+    <string name="poisson_summary">Engedélyezze az utófeldolgozási algoritmust a modellgeometriában lévő lyukak kijavításához, vegye figyelembe, hogy ez az algoritmus nem működik jól a nyitott tereknél, és meghosszabbíthatja az utófeldolgozást.</string>
+    <string name="textures">Korlátozza a textúrák számát</string>
+    <string name="textures_summary">Korlátozza a textúrák mennyiségét. A több textúra jobb vizuális minőséget biztosít.</string>
+    <string-array name="textures_names">
+        <item>Egyetlen textúra</item>
+        <item>Max 4 textúra</item>
+        <item>Ne korlátozza</item>
+    </string-array>
+    <string name="anchor">Horgonyok megjelenítése szkennelés közben</string>
+    <string name="anchor_summary">A horgonyokat a készülék helyzetének követésének stabilizálására használják.</string>
+    <string name="grid">Mutasd a rácsot</string>
+    <string name="grid_summary">A rács megkönnyíti a 3D tér megértését.</string>
+    <string name="camera">A kamera adatainak megjelenítése szkennelés közben</string>
+    <string name="camera_summary">A kamera bemutatása további információkat szolgáltat a beolvasási folyamatról, azonban ez az eszköz túlmelegedését és alacsonyabb szkennelési teljesítményt okozhat.</string>
+    <string name="offset">Eltolás hozzáadása a geometriához</string>
+    <string name="offset_summary">Az eltolás hozzáadása a geometriához lehetővé teszi vékony objektumok beolvasását mindkét oldalról. Ezzel az opcióval a geometria kevésbé pontos.</string>
+    <string name="depth_sensor">Mélységérzékelő használata</string>
+    <string name="depth_sensor_summary">Az aktív mélységérzékelő pontosabb és további részleteket szkennel.</string>
+    <string name="gps">A GPS segítségével jelölje be a pozíciót</string>
+    <string name="gps_summary">GPS-címke segítségével meg lehet jeleníteni a térképen, ahol a modellt rögzítették.</string>
+    <string name="fullhd">Készítsen fullHD fényképeket</string>
+    <string name="fullhd_summary">A fullHD-fotók adatkészletbe történő rögzítése lehetővé teszi az adatok felhasználását a fotogrammetriai szoftverben. Vegye figyelembe, hogy ez az opció lelassítja a beolvasási folyamatot.</string>
+    <string name="align_pose">Igazító eszköz póz</string>
+    <string name="align_pose_summary">A textúra minőségének növelése érdekében beállítja az eszköz helyzetét. Ez az opció sokkal lassabbá teszi a rögzítést.</string>
+    <string name="flash_light">Használjon zseblámpát</string>
+    <string name="flash_light_summary">A zseblámpa megkönnyíti a szkennelést sötét helyeken.</string>
+    <string name="decimation">Csökkentse a sokszög számát</string>
+    <string name="decimation_summary">Az utófeldolgozás részeként van egy decimációnak nevezett folyamat, amely csökkenti a sokszögek mennyiségét.</string>
+    <string-array name="decimation_names">
+        <item>Maximális részletesség</item>
+        <item>Optimális a VR-hez</item>
+        <item>Alacsony sokszögszám</item>
+    </string-array>
+    <string name="limit">Korlátozza a szkennelési távolságot</string>
+    <string name="limit_summary">A szkennelési távolság korlátozásával könnyebb az objektumnak csak egy részét beolvasni, és a mély mélységű adatokat kisebb pontossággal szűrni.</string>
+    <string-array name="limit_names">
+        <item>1 méter - csak tárgyak</item>
+        <item>2 méter - a legjobb pontosság</item>
+        <item>4 méter - gyors szkennelés</item>
+        <item>Nincs szoftverkorlátozás</item>
+    </string-array>
+    <string name="noise">Zajszűrő</string>
+    <string name="noise_summary">A zajszűrő használata csökkenti a hibás geometriát a beolvasás során. Vegye figyelembe, hogy ez csökkenti a szkennelés sebességét.</string>
+    <string-array name="noise_names">
+        <item>Nincs zajszűrő</item>
+        <item>Normál zajszűrő</item>
+        <item>Agresszív zajszűrő</item>
+    </string-array>
+    <string name="clearing">Helytisztítás</string>
+    <string name="clearing_summary">Ez a szolgáltatás törli azokat az adatokat a jelenetből, amelyek csak ideiglenesen voltak láthatóak.</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">Színek</string>
+    <string name="editor_main_select">Kiválasztás</string>
+    <string name="editor_main_transform">Transzformálás</string>
+    <string name="editor_main_edit">Szerkesztés</string>
+    <string name="editor_colors_contrast">Kontraszt</string>
+    <string name="editor_colors_gamma">Gamma</string>
+    <string name="editor_colors_saturation">Telítettség</string>
+    <string name="editor_colors_tone">Tónus</string>
+    <string name="editor_colors_reset">Visszaállítás</string>
+    <string name="editor_select_all">Minden/Semmi</string>
+    <string name="editor_select_object">Objekt</string>
+    <string name="editor_select_object_desc">Éritsd meg az objektot a kijelöléshez.</string>
+    <string name="editor_select_circle">Kör</string>
+    <string name="editor_select_circle_desc">Kijelölési kör létrehozása egy kör képernyőn történő húzásával.</string>
+    <string name="editor_select_rect">Téglalap</string>
+    <string name="editor_select_rect_desc">Téglalapos kijelölés a képernyön a képernyő érintéséből.</string>
+    <string name="editor_select_less">Kevesebb</string>
+    <string name="editor_select_more">Több</string>
+    <string name="editor_transform_clone">Másolás</string>
+    <string name="editor_transform_delete">Törlés</string>
+    <string name="editor_transform_move">Mozdítás</string>
+    <string name="editor_transform_rotate">Fordítás</string>
+    <string name="editor_transform_scale">Skála</string>
+    <string name="editor_edit_undo">Undo</string>
+    <string name="editor_edit_visualisation">Vizualizáció</string>
+    <string name="editor_deselect">Válassza ki</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">Vissza operation</string>
+    <string name="enter_filename">Írd be a fájl nevét</string>
+    <string name="failed">Kiszámítása vége, a szkennellt adat elveszett!</string>
+    <string name="finished">A kiszámítása vége</string>
+    <string name="paused">Szkennelés megállítva</string>
+    <string name="postprocessing">A modell számítása…</string>
+    <string name="saving">Mentés…</string>
+    <string name="turn_off">Ki tudsz lépni az appból adatvesztés nélkül.</string>
+    <string name="warning">Vigyázat</string>
+    <string name="working">Az app dolgozik ne kapcsold ki a telefont és ne indíts el új AR appot.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">Fotók elemzése</string>
+    <string name="event_features">Problémák a meghatározással!</string>
+    <string name="event_convert">Adat töltése</string>
+    <string name="event_image">Fotó számítása</string>
+    <string name="event_merge">Átszámítás</string>
+    <string name="event_process">Modell elemezése</string>
+    <string name="event_simplify">Geometria dolgozása</string>
+    <string name="event_unwrap">Textúrák dolgozása</string>
+    <string name="scan_discard">Ez a művelet elveti a szkennelés folyamatát.</string>
+    <string name="scan_finish">A mentés befejezi a szkennelést.</string>
+    <string name="scan_rewind">Tekerje vissza a beolvasási folyamatot abba az állapotba, ahonnan folytatni kívánja.</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm - Kicsi szoba</string>
+    <string name="scan_2cm">2 cm - Közepes</string>
+    <string name="scan_4cm">4 cm - Nagy</string>
+    <string name="scan_8cm">8 cm - Gyors szkennelés</string>
+    <string name="screenshot">Pillanatkép</string>
+    <string name="videoshot">Forgó videó</string>
+
+    <string-array name="shares">
+        <item>Android dialog</item>
+        <item>Online konverter</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">Átmérő</string>
+    <string name="fd_length">Hossz</string>
+    <string name="fd_volume">Hangerő</string>
+    <string name="fd_write_scan_desc">Mutassa be a letapogatást</string>
+    <string name="fd_select_scan_type">Válassza ki a szkennelés típusát</string>
+    <string name="fd_scan_type_trunk">Törzs</string>
+    <string name="fd_scan_type_stack">Sokk</string>
+    <string name="fd_scan_type_transport">Szállítás</string>
+    <string name="fd_scan_type_tree">Fa</string>
+    <string name="fd_scan_type_other">Egyéb</string>
+    <string name="fd_scan_limit">Maximális mennyiségű letapogatás elérése. A folytatáshoz töröljön néhány vizsgálatot, vagy további információkért forduljon a office@forestdesign.ro címre.</string>
+</resources>

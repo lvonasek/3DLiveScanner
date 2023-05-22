@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">ToF查看器</string>
+  <string name="more">更多</string>
+  <string name="scheme">设置ToF数据映射</string>
+  <string name="sleep">监测睡眠活动</string>
+  <string name="sleep_airplane">您的手机没有进入飞行模式。请启用飞机模式，再打开该功能。</string>
+  <string name="sleep_description">此功能可以将一整夜拍摄成5分钟的视频，以监测您的睡眠问题。将手机放在一个稳定的位置上，将您的床铺展现在摄像头上。手机应连接到充电器上。显示屏将自动关闭。早上长按显示屏完成这个过程。</string>
+  <string name="vr">虚拟现实模式</string>
+  <string name="vr_description">此功能需要VR头盔上有摄像头模块的孔。在使用之前，请确保你使用你的眼睛的箭头按钮调整它。在没有调整的情况下使用该应用程序可能会损害您的眼睛!\n\n请勿将此功能用于任何非法活动!</string>
+
+  <string-array name="scheme_variants">
+    <item>红色、黄色/绿色为IR置信度</item>
+    <item>蓝色、青色/蓝色作为红外信心</item>
+    <item>绿色、白色/粉红色作为IR信心</item>
+    <item>灰度，无红外置信度</item>
+    <item>定向法线图</item>
+  </string-array>
+</resources>

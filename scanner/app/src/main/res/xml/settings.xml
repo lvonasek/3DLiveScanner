@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="src_main">
+
+    <PreferenceCategory
+        android:key="cat_settings"
+        android:title="@string/settings">
+
+        <PreferenceScreen
+            android:key="src_hardware"
+            android:title="@string/sensor_usage" >
+            <PreferenceCategory
+                android:key="cat_hardware"
+                android:title="@string/sensor_usage">
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="@string/pref_gps"
+                    android:summary="@string/gps_summary"
+                    android:title="@string/gps" />
+
+                <CheckBoxPreference
+                    android:key="@string/pref_depth"
+                    android:summary="@string/depth_sensor_summary"
+                    android:title="@string/depth_sensor" />
+
+                <!--CheckBoxPreference
+                    android:defaultValue="false"
+                    android:enabled="false"
+                    android:key="@string/pref_flash"
+                    android:summary="@string/flash_light_summary"
+                    android:title="@string/flash_light" /!-->
+            </PreferenceCategory>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="src_realtime"
+            android:title="@string/mode_realtime" >
+
+            <PreferenceCategory
+                android:key="cat_realtime"
+                android:title="@string/mode_realtime">
+
+                <PreferenceScreen
+                    android:key="src_parameters"
+                    android:title="@string/scan_parameters" >
+
+                    <PreferenceCategory
+                        android:key="cat_parameters"
+                        android:title="@string/scan_parameters">
+
+                        <CheckBoxPreference
+                            android:defaultValue="true"
+                            android:key="@string/pref_offset"
+                            android:summary="@string/offset_summary"
+                            android:title="@string/offset" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_fullhd"
+                            android:summary="@string/fullhd_summary"
+                            android:title="@string/fullhd" />
+
+                        <ListPreference
+                            android:defaultValue="4"
+                            android:entries="@array/limit_names"
+                            android:entryValues="@array/limit_values"
+                            android:key="pref_limit"
+                            android:summary="@string/limit_summary"
+                            android:title="@string/limit" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_slow"
+                            android:summary="@string/align_pose_summary"
+                            android:title="@string/align_pose" />
+
+                        <ListPreference
+                            android:defaultValue="9"
+                            android:entries="@array/noise_names"
+                            android:entryValues="@array/noise_values"
+                            android:key="@string/pref_noise"
+                            android:summary="@string/noise_summary"
+                            android:title="@string/noise" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="true"
+                            android:key="@string/pref_clear"
+                            android:summary="@string/clearing_summary"
+                            android:title="@string/clearing" />
+                    </PreferenceCategory>
+                </PreferenceScreen>
+
+                <PreferenceScreen
+                    android:key="src_postprocess"
+                    android:title="@string/scan_postprocess" >
+
+                    <PreferenceCategory
+                        android:key="cat_postprocess"
+                        android:title="@string/scan_postprocess">
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_subset"
+                            android:summary="@string/analyse_summary"
+                            android:title="@string/event_analyse" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_poisson"
+                            android:summary="@string/poisson_summary"
+                            android:title="@string/poisson" />
+
+                        <ListPreference
+                            android:defaultValue="1"
+                            android:entries="@array/decimation_names"
+                            android:entryValues="@array/decimation_values"
+                            android:key="pref_decimation"
+                            android:summary="@string/decimation_summary"
+                            android:title="@string/decimation" />
+
+                        <ListPreference
+                            android:defaultValue="4"
+                            android:entries="@array/textures_names"
+                            android:entryValues="@array/textures_values"
+                            android:key="pref_textures"
+                            android:summary="@string/textures_summary"
+                            android:title="@string/textures" />
+
+                    </PreferenceCategory>
+                </PreferenceScreen>
+
+                <PreferenceScreen
+                    android:key="src_visualisations"
+                    android:title="@string/scan_visualisations" >
+                    <PreferenceCategory
+                        android:key="cat_visualisations"
+                        android:title="@string/scan_visualisations">
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_anchor"
+                            android:summary="@string/anchor_summary"
+                            android:title="@string/anchor" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="false"
+                            android:key="@string/pref_camera"
+                            android:summary="@string/camera_summary"
+                            android:title="@string/camera" />
+
+                        <CheckBoxPreference
+                            android:defaultValue="true"
+                            android:key="@string/pref_grid"
+                            android:summary="@string/grid_summary"
+                            android:title="@string/grid" />
+                    </PreferenceCategory>
+                </PreferenceScreen>
+
+                <ListPreference
+                    android:defaultValue="0.04"
+                    android:entries="@array/profile_resolution_names"
+                    android:entryValues="@array/profile_resolution_values"
+                    android:key="pref_resolution"
+                    android:summary="text_placer"
+                    android:title="@string/profile_resolution" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

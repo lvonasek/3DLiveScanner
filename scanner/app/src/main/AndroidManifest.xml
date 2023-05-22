@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.lvonasek.arcore3dscanner"
+          android:versionCode="220022"
+          android:versionName="2022-build_0022">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+    <uses-feature android:name="com.google.ar.core.depth" android:required="false" />
+
+    <queries>
+        <package android:name="com.huawei.arengine.service" />
+    </queries>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Material.NoActionBar"
+        android:allowBackup="false"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".ui.Initializator" android:label="@string/app_name" android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="hwpps" android:host="com.lvonasek.arcore3dscanner"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content"/>
+                <data android:host="*"/>
+                <data android:mimeType="application/zip"/>
+                <data android:pathPattern=".*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.scan.zip"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
+                <data android:mimeType="application/zip"/>
+                <data android:pathPattern=".*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.scan.zip"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.scan.zip"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".main.Main"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.Settings"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".sketchfab.Uploader"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.FileManager"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.Uploader"/>
+        <service android:name=".ui.Service"/>
+
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".sketchfab.OAuth">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="lvonasek.github.io"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".vr.CardboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/VrActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:enableVrMode="@string/gvr_vr_mode_component"
+            android:resizeableActivity="false"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <activity
+            android:name=".vr.DaydreamActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/VrActivityTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:enableVrMode="@string/gvr_vr_mode_component"
+            android:resizeableActivity="false"
+            android:launchMode="singleTop" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.google.intent.category.DAYDREAM" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <meta-data android:name="com.google.ar.core" android:value="optional" />
+        <meta-data android:name="com.huawei.ar.engine" android:value="optional" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+
+</manifest>

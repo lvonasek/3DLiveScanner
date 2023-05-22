@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.vr.sdk.base.GvrView
+        android:id="@+id/gvr_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lvonasek.gles.GLESSurfaceView
+        android:id="@+id/glsurfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/vrLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="+"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="-"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="&lt;-"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="-&gt;"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="\u039b"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="V"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="RST"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/more_button"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:text="@string/more"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_button"/>
+
+        <LinearLayout
+            android:id="@+id/layout_icons"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/record_button"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_record"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="25dp"/>
+
+            <Button
+                android:id="@+id/thumbnail_button"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_thumbnail"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="no_data">Žádné 3D modely</string>
+    <string name="migrating_data">Migrace dat do nové složky, počkejte prosím…</string>
+    <string name="name_exists">Model s zadaným jménem už existuje.</string>
+    <string name="invalid_name">Neplatné jméno!</string>
+    <string name="delete">Odstranit data</string>
+    <string name="capture">Skenovat</string>
+    <string name="settings">Nastavení</string>
+    <string name="scene_res">Vyberte rozlišení skenování</string>
+    <string name="jump">Aplikace zjistila neplatnost údajů o sledování pohybu. Zkontrolujte, zda zařízení zobrazuje správnou polohu, a poté pokračujte ve skenování kliknutím na ikonu nahrávání.</string>
+    <string name="move">Pohybujte zařízením kolem, abyste spustili skenování.</string>
+    <string name="continue_question">Chcete pokračovat?</string>
+    <string name="info">Používáním této aplikace souhlasíte s #BEGIN#podmínkami ochrany soukromí#END#.\n\nVeškerá data budou uložena ve složce \"Models\" v interním úložišti</string>
+    <string name="share_via">Sdílet pomocí</string>
+    <string name="postprocess">Zpracovat</string>
+    <string name="wait">Prosím čekejte</string>
+    <string name="export">Exportovat data</string>
+    <string name="folder_new">Nová složka</string>
+    <string name="folder_up">(Nadřazená složka)</string>
+    <string name="data_saved">Data uložena jako</string>
+    <string name="lowend_device">Vaše zařízení není certifikováno pomocí rozhraní Google Depth API. Výkon aplikace může být omezený.</string>
+    <string name="permissions_required">Pro funkci 3D skenování jsou vyžadována oprávnění pro kameru a úložiště.</string>
+    <string name="policy_accepted">Přečetl/a jsem si zásady ochrany osobních údajů a souhlasím s nimi</string>
+    <string name="more_items">Více položek</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_details">Ve srovnání s bezplatnou verzí nabízí placená verze více nastavení, žádné reklamy a možnost zachytit datovou sadu. Pomocí ní můžete:\n- exportovat půdorys\n- exportovat nezpracované mračno bodů</string>
+    <string name="storage_bug">Aplikace zjistila, že vaše zařízení je postiženo chybou systému Android, která znemožňuje přístup k některým datům. Aplikace nemůže pracovat správně, dokud se problém nevyřeší.\n\Tento problém lze vyřešit pouze ručně.</string>
+    <string name="resolve_manually">Řešení problému</string>
+    <string name="show_normals">Zobrazit normály</string>
+    <string name="photo_mode">Režim fotografie</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">Popis:</string>
+    <string name="model_name">Jméno modelu:</string>
+    <string name="sketchfab_dialog_title">Nahrát do Sketchfabu</string>
+    <string name="sketchfab_pro">U velikosti nad 100 MB je vyžadován účet Sketchfab PRO, jinak může nahrávání selhat.</string>
+    <string name="sketchfab_upload_ready">Model je komprimovaný a připravený k nahrání!</string>
+    <string name="sketchfab_uploading">Nahrávání modelu do Sketchfabu…</string>
+    <string name="tags">Tagy:</string>
+    <string name="upload">Nahrát</string>
+    <string name="upload_size_is">Celková velikost k nahrání je</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">Před texturováním analyzujte fotografie a zajistěte, aby byly použity pouze kvalitní fotografie.</string>
+    <string name="privacy_policy">Zásady ochrany soukromí</string>
+    <string name="sensor_usage">Použití senzorů</string>
+    <string name="scan_postprocess">Postproces skenování</string>
+    <string name="scan_visualisations">Vizualizace skenování</string>
+    <string name="scan_parameters">Parametry skenování</string>
+    <string name="mode_realtime">Vnitřní/venkovní skenování</string>
+    <string name="mode_dataset">Zaznamenat dataset</string>
+    <string name="mode_face">Skenování obličeje</string>
+    <string name="scan_single_room">Skenování jedné místnosti</string>
+    <string name="scan_large_interior">Skenování velkého interiéru</string>
+    <string name="scan_exterior">Skenování exterioru</string>
+    <string name="export_floorplan">Exportovat jako půdorys</string>
+    <string name="export_pointcloud">Exportovat jako pointcloud</string>
+    <string name="export_model">Exportovat jako 3D model</string>
+    <string name="profile_resolution">Rozlišení</string>
+    <string name="poisson">Poissonova rekonstrukce</string>
+    <string name="poisson_summary">Povolte postprocesní algoritmus k opravě děr v geometrii modelu. Pamatujte, že tento algoritmus nefunguje dobře s otevřenými prostory a může postprocesing prodloužit.</string>
+    <string name="textures">Omezit počet textur</string>
+    <string name="textures_summary">Omezuje množství textur. Více textur poskytuje lepší vizuální kvalitu.</string>
+    <string-array name="textures_names">
+        <item>Jedna textura</item>
+        <item>Max 4 textury</item>
+        <item>Neomezovat</item>
+    </string-array>
+    <string name="anchor">Zobrazit anchory během skenování</string>
+    <string name="anchor_summary">Anchory se používají ke stabilizaci sledování polohy zařízení.</string>
+    <string name="grid">Zobrazit podlahovou mřížku</string>
+    <string name="grid_summary">Mřížka usnadňuje pochopení 3D prostoru.</string>
+    <string name="camera">Zobrazit data fotoaparátu během skenování</string>
+    <string name="camera_summary">Zobrazená kamera produkuje další informace o procesu skenování, může však způsobit přehřátí zařízení a nižší výkon skenování.</string>
+    <string name="offset">Přidat k geometrii odsazení</string>
+    <string name="offset_summary">Přidání offsetu ke geometrii umožňuje skenovat tenké objekty z obou stran. Tato možnost snižuje přesnost geometrie.</string>
+    <string name="depth_sensor">Použít depth senzor</string>
+    <string name="depth_sensor_summary">Aktivní depth senzor je přesnější a skenuje více podrobností.</string>
+    <string name="gps">Pomocí GPS označit polohu</string>
+    <string name="gps_summary">Pomocí značky GPS je možné zobrazit na mapě, kde byl model zachycen.</string>
+    <string name="fullhd">Pořizovat fotografie v rozlišení FullHD</string>
+    <string name="fullhd_summary">Pořizování fotografií v rozlišení FullHD do datové sady umožňuje používat data v softwaru pro fotogrammetrii. Tato možnost zpomaluje proces skenování.</string>
+    <string name="align_pose">Zarovnání pozice zařízení</string>
+    <string name="align_pose_summary">Upravuje polohu zařízení pro zvýšení kvality textury. Díky této možnosti je snímání mnohem pomalejší.</string>
+    <string name="flash_light">Použít svítilnu</string>
+    <string name="flash_light_summary">Svítilna usnadňuje skenování na tmavých místech.</string>
+    <string name="decimation">Snížit počet polygonů</string>
+    <string name="decimation_summary">Součástí postprocesingu je proces zvaný decimace, který snižuje množství polygonů.</string>
+    <string-array name="decimation_names">
+        <item>Maximální detail</item>
+        <item>Optimální pro VR</item>
+        <item>Nízký počet polygonů</item>
+    </string-array>
+    <string name="limit">Omezit skenovací vzdálenost</string>
+    <string name="limit_summary">Omezením vzdálenosti skenování je snazší skenovat pouze část objektu a filtrovat vzdálené data s nižší přesností.</string>
+    <string-array name="limit_names">
+        <item>1 metr - pouze objekty</item>
+        <item>2 metry - nejlepší přesnost</item>
+        <item>4 metry - rychlé skenování</item>
+        <item>Žádný softwarový limit</item>
+    </string-array>
+    <string name="noise">Filtr šumu</string>
+    <string name="noise_summary">Použití filtru šumu snižuje množství nesprávné geometrie ve skenování. Pamatujte, že to snižuje rychlost skenování.</string>
+    <string-array name="noise_names">
+        <item>Žádný filtr šumu</item>
+        <item>Normální filtr šumu</item>
+        <item>Agresivní filtr šumu</item>
+    </string-array>
+    <string name="clearing">Vyčištění prostoru</string>
+    <string name="clearing_summary">Tato funkce vymaže data ze scény, která byla viditelná pouze dočasně.</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">Barvy</string>
+    <string name="editor_main_select">Vybrat</string>
+    <string name="editor_main_transform">Transformovat</string>
+    <string name="editor_main_edit">Upravit</string>
+    <string name="editor_colors_contrast">Kontrast</string>
+    <string name="editor_colors_gamma">Světlost</string>
+    <string name="editor_colors_saturation">Sytost</string>
+    <string name="editor_colors_reset">Resetovat</string>
+    <string name="editor_colors_tone">Tón</string>
+    <string name="editor_select_all">Vše/Nic</string>
+    <string name="editor_select_object">Objekt</string>
+    <string name="editor_select_object_desc">Klikněte na objekt pro výběr.</string>
+    <string name="editor_select_circle">Kruh</string>
+    <string name="editor_select_circle_desc">Tažení po displeji kruhový proveďte výběr.</string>
+    <string name="editor_select_rect">Obdelník</string>
+    <string name="editor_select_rect_desc">Tažení po displeji obdélníkový proveďte výběr.</string>
+    <string name="editor_select_less">Méně</string>
+    <string name="editor_select_more">Více</string>
+    <string name="editor_transform_clone">Kopírovat</string>
+    <string name="editor_transform_delete">Smazat</string>
+    <string name="editor_transform_move">Posunout</string>
+    <string name="editor_transform_rotate">Otočit</string>
+    <string name="editor_transform_scale">Škálovat</string>
+    <string name="editor_edit_undo">Zpět</string>
+    <string name="editor_edit_visualisation">Vizualizace</string>
+    <string name="editor_deselect">Zrušit výběr</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">Zrušit operaci</string>
+    <string name="enter_filename">Zadejte název souboru</string>
+    <string name="failed">Proces selhal, naskenovaná data jsou ztraceny!</string>
+    <string name="finished">Operace dokončena</string>
+    <string name="paused">Skenování pozastaveno</string>
+    <string name="postprocessing">Zpracovávám model…</string>
+    <string name="saving">Ukládám model…</string>
+    <string name="turn_off">Nyní můžete ukončit aplikaci bez ztráty dat.</string>
+    <string name="warning">Varování</string>
+    <string name="working">Aplikace pracuje, prosím nevypínejte zařízení a nespouštějte jinou AR aplikaci.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">Analýza fotek</string>
+    <string name="event_features">Sledování pohybu detekovalo problém</string>
+    <string name="event_convert">Konvertuji data</string>
+    <string name="event_image">Zpracovávám fotku</string>
+    <string name="event_merge">Merguji výsledky</string>
+    <string name="event_process">Zpracovávám model</string>
+    <string name="event_simplify">Zjednodušuji geometrii</string>
+    <string name="event_unwrap">Rozbaluji textury</string>
+    <string name="scan_discard">Tato akce smaže progres skenování.</string>
+    <string name="scan_finish">Uložením se skenování dokončí.</string>
+    <string name="scan_rewind">Přetočte proces skenování do stavu, ze kterého chcete pokračovat.</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm - Malá místnost</string>
+    <string name="scan_2cm">2 cm - Interior</string>
+    <string name="scan_4cm">4 cm - Exterior</string>
+    <string name="scan_8cm">8 cm - Rychlý sken</string>
+    <string name="screenshot">Snímek obrazovky</string>
+    <string name="videoshot">Rotující video</string>
+
+    <string-array name="shares">
+        <item>Android dialog</item>
+        <item>Online konvertor</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">Průměr</string>
+    <string name="fd_length">Délka</string>
+    <string name="fd_volume">Objem</string>
+    <string name="fd_write_scan_desc">Popište sken</string>
+    <string name="fd_select_scan_type">Vyberte typ skenu</string>
+    <string name="fd_scan_type_trunk">Kmen</string>
+    <string name="fd_scan_type_stack">Hromada</string>
+    <string name="fd_scan_type_transport">Převoz</string>
+    <string name="fd_scan_type_tree">Strom</string>
+    <string name="fd_scan_type_other">Ostatní</string>
+    <string name="fd_scan_limit">Maximální počet dosažených skenů. Chcete-li pokračovat, smažte některá skenování nebo se obraťte na office@forestdesign.ro a získejte další informace.</string>
+</resources>

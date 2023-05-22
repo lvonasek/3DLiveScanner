@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+configurations { natives }
+def arcore_libpath = "../../arcore"
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 30
+        manifestPlaceholders = ['appAuthRedirectScheme': 'https://lvonasek.github.io/redirect.html']
+        multiDexEnabled true
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += '../../common/ar/'
+        main.java.srcDirs += '../../common/record/'
+        main.java.srcDirs += '../../common/utils/'
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.google.ar:core:1.31.0'
+    natives 'com.google.ar:core:1.31.0'
+    implementation 'com.huawei.hms:arenginesdk:3.5.0.1'
+    implementation files('src/main/libs/sdk-base-1.190.0.aar')
+    implementation 'net.openid:appauth:0.11.1'
+
+    implementation 'org.jcodec:jcodec:0.2.3'
+    implementation 'org.jcodec:jcodec-android:0.2.3'
+}
+
+task extractNativeLibraries() {
+    // Always extract, this insures the native libs are updated if the version changes.
+    outputs.upToDateWhen { false }
+    doFirst {
+        configurations.natives.files.each { f ->
+            copy {
+                from zipTree(f)
+                into arcore_libpath
+                include "jni/**/*"
+            }
+        }
+    }
+}
+
+tasks.whenTaskAdded {
+    task-> if (task.name.contains("external") && !task.name.contains("Clean")) {
+        task.dependsOn(extractNativeLibraries)
+    }
+}

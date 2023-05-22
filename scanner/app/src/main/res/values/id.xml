@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_decimation" translatable="false">pref_decimation</string>
+    <string name="pref_anchor" translatable="false">pref_anchor</string>
+    <string name="pref_camera" translatable="false">pref_camera</string>
+    <string name="pref_clear" translatable="false">pref_clear</string>
+    <string name="pref_depth" translatable="false">pref_depth</string>
+    <string name="pref_flash" translatable="false">pref_flash</string>
+    <string name="pref_fullhd" translatable="false">pref_fullhd</string>
+    <string name="pref_gps" translatable="false">pref_gps</string>
+    <string name="pref_grid" translatable="false">pref_grid</string>
+    <string name="pref_later" translatable="false">pref_later</string>
+    <string name="pref_layout" translatable="false">pref_layout</string>
+    <string name="pref_limit" translatable="false">pref_limit</string>
+    <string name="pref_mode" translatable="false">pref_mode</string>
+    <string name="pref_noise" translatable="false">pref_noise</string>
+    <string name="pref_offset" translatable="false">pref_offset</string>
+    <string name="pref_poisson" translatable="false">pref_poisson</string>
+    <string name="pref_resolution" translatable="false">pref_resolution</string>
+    <string name="pref_slow" translatable="false">pref_slow</string>
+    <string name="pref_subset" translatable="false">pref_subset</string>
+    <string name="pref_textures" translatable="false">pref_textures</string>
+</resources>

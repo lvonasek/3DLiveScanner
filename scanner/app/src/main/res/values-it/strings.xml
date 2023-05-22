@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="no_data">Nessun modello 3D</string>
+    <string name="migrating_data">Migrazione dei dati in una nuova cartella, attendere prego…</string>
+    <string name="name_exists">Esiste già un modello con questo nome.</string>
+    <string name="invalid_name">Nome file non valido!</string>
+    <string name="delete">Cancellare i dati</string>
+    <string name="capture">Scansione</string>
+    <string name="settings">Impostazioni</string>
+    <string name="scene_res">Scegliere la risoluzione di cattura</string>
+    <string name="jump">L\'app ha rilevato dati di rilevamento del movimento non validi. Verificare che il dispositivo mostri la posizione corretta e quindi fare clic sull\'icona di registrazione per continuare la scansione.</string>
+    <string name="move">Spostare il dispositivo per avviare la scansione.</string>
+    <string name="continue_question">Vuoi continuare?</string>
+    <string name="info">Usando questa applicazione accetti #BEGIN#l\'informativa sulla privacy.#END#.\n\nTutti i dati saranno salvati nella cartella "Models"\n\nNella memoria interna.</string>
+    <string name="share_via">Condividi tramite</string>
+    <string name="postprocess">Post-processo</string>
+    <string name="wait">Attendere per favore</string>
+    <string name="export">Dati di esportazione</string>
+    <string name="folder_new">Nuova cartella</string>
+    <string name="folder_up">(Cartella principale)</string>
+    <string name="data_saved">Dati salvati come</string>
+    <string name="lowend_device">Il tuo dispositivo non è certificato con Google Depth API. Le prestazioni dell\'app potrebbero essere limitate.</string>
+    <string name="permissions_required">Per la funzionalità di scansione 3D sono richieste le autorizzazioni per la fotocamera e l\'archiviazione.</string>
+    <string name="policy_accepted">Ho letto e accetto l\'informativa sulla privacy</string>
+    <string name="more_items">Altri articoli</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_details">Rispetto alla versione gratuita, la versione a pagamento offre più impostazioni, nessuna pubblicità e la possibilità di catturare un set di dati. Usando questo è possibile:\n- esportare la planimetria\n- esportare la nuvola di punti grezzi</string>
+    <string name="storage_bug">L\'applicazione ha rilevato che il tuo dispositivo è affetto da un bug di Android che impedisce l\'accesso ad alcuni dati. L\'app non può funzionare correttamente finché il problema non viene risolto. Questo problema può essere risolto solo manualmente.</string>
+    <string name="resolve_manually">Risolvere il problema</string>
+    <string name="show_normals">Mostra le norme</string>
+    <string name="photo_mode">Modalità foto</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">Descrizione:</string>
+    <string name="model_name">Nome del modello:</string>
+    <string name="sketchfab_dialog_title">Carica su Sketchfab</string>
+    <string name="sketchfab_pro">Tieni presente che per dimensioni superiori a 100 MB, è necessario un account Sketchfab PRO, altrimenti il caricamento potrebbe non riuscire.</string>
+    <string name="sketchfab_upload_ready">Il modello è compresso e pronto per il caricamento!</string>
+    <string name="sketchfab_uploading">Caricamento del modello su Sketchfab…</string>
+    <string name="tags">Tag:</string>
+    <string name="upload">Caricare</string>
+    <string name="upload_size_is">La dimensione totale da caricare è</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">Analizzare le foto prima del texturing e assicurarsi che vengano usate solo foto buone.</string>
+    <string name="privacy_policy">Politica sulla privacy</string>
+    <string name="sensor_usage">Utilizzo dei sensori</string>
+    <string name="scan_postprocess">Postprocesso di scansione</string>
+    <string name="scan_visualisations">Visualizzazioni di scansione</string>
+    <string name="scan_parameters">Parametri di scansione</string>
+    <string name="mode_realtime">Scansione interna/esterna</string>
+    <string name="mode_dataset">Catturare un dataset</string>
+    <string name="mode_face">Scansione del viso</string>
+    <string name="scan_single_room">Scansione della camera singola</string>
+    <string name="scan_large_interior">Scansione grande interna</string>
+    <string name="scan_exterior">Scansione esterna</string>
+    <string name="export_floorplan">Esportazione come planimetria</string>
+    <string name="export_pointcloud">Esportazione come pointcloud</string>
+    <string name="export_model">Esportazione come modello 3D</string>
+    <string name="profile_resolution">Risoluzione</string>
+    <string name="poisson">Ricostruzione di Poisson</string>
+    <string name="poisson_summary">Abilita l\'algoritmo di postelaborazione per correggere i buchi nella geometria del modello, nota che questo algoritmo non funziona bene con gli spazi aperti e può allungare la postprocessing.</string>
+    <string name="textures">Limita il conteggio delle texture</string>
+    <string name="textures_summary">Limita la quantità di trame. Più trame offrono una migliore qualità visiva.</string>
+    <string-array name="textures_names">
+        <item>Trama unica</item>
+        <item>Max 4 trame</item>
+        <item>Non limitare</item>
+    </string-array>
+    <string name="anchor">Mostra ancore durante la scansione</string>
+    <string name="anchor_summary">Gli ancoraggi vengono utilizzati per stabilizzare il tracciamento della posizione del dispositivo.</string>
+    <string name="grid">Mostra griglia del pavimento</string>
+    <string name="grid_summary">La griglia semplifica la comprensione dello spazio 3D.</string>
+    <string name="camera">Mostra i dati della fotocamera durante la scansione</string>
+    <string name="camera_summary">La visualizzazione della fotocamera produce informazioni aggiuntive sul processo di scansione, tuttavia potrebbe causare il surriscaldamento del dispositivo e ridurre le prestazioni di scansione.</string>
+    <string name="offset">Aggiungi offset alla geometria</string>
+    <string name="offset_summary">L\'aggiunta di offset alla geometria consente di scansionare oggetti sottili da entrambi i lati. Questa opzione rende la geometria meno accurata.</string>
+    <string name="depth_sensor">Utilizzare il sensore di profondità</string>
+    <string name="depth_sensor_summary">Il sensore di profondità attivo è più preciso e scansiona più dettagli.</string>
+    <string name="gps">Usa il GPS per contrassegnare la posizione</string>
+    <string name="gps_summary">Utilizzando un tag GPS è possibile mostrare sulla mappa dove è stato catturato il modello.</string>
+    <string name="fullhd">Cattura foto fullHD</string>
+    <string name="fullhd_summary">L\'acquisizione di foto fullHD nel set di dati consente di utilizzare i dati nel software di fotogrammetria. Notare che questa opzione rallenta il processo di scansione.</string>
+    <string name="align_pose">Allineamento della posizione del dispositivo</string>
+    <string name="align_pose_summary">Regola la posa del dispositivo per aumentare la qualità della trama. Questa opzione rende l\'acquisizione molto più lenta.</string>
+    <string name="flash_light">Usa la torcia</string>
+    <string name="flash_light_summary">La torcia rende più facile la scansione in luoghi bui.</string>
+    <string name="decimation">Diminuisci il numero di poligoni</string>
+    <string name="decimation_summary">Come parte del postprocessing, c\'è un processo chiamato decimazione che riduce la quantità di poligoni.</string>
+    <string-array name="decimation_names">
+        <item>Massimo dettaglio</item>
+        <item>Ottimale per la VR</item>
+        <item>Basso numero di poligoni</item>
+    </string-array>
+    <string name="limit">Limita la distanza di scansione</string>
+    <string name="limit_summary">Limitando la distanza di scansione è più facile scansionare solo una parte dell\'oggetto e filtrare i dati di profondità lontana con minore precisione.</string>
+    <string-array name="limit_names">
+        <item>1 metro - solo oggetti</item>
+        <item>2 metri - massima precisione</item>
+        <item>4 metri - scansione veloce</item>
+        <item>Nessun limite software</item>
+    </string-array>
+    <string name="noise">Filtro del rumore</string>
+    <string name="noise_summary">L\'uso del filtro del rumore riduce la quantità di geometria errata nella scansione. Notare che diminuisce la velocità di scansione.</string>
+    <string-array name="noise_names">
+        <item>Nessun filtro antirumore</item>
+        <item>Filtro rumore normale</item>
+        <item>Filtro antirumore aggressivo</item>
+    </string-array>
+    <string name="clearing">Svuotamento dello spazio</string>
+    <string name="clearing_summary">Questa funzione cancella i dati dalla scena che erano visibili solo temporaneamente.</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">Colori</string>
+    <string name="editor_main_select">Seleziona</string>
+    <string name="editor_main_transform">Trasforma</string>
+    <string name="editor_main_edit">Modifica</string>
+    <string name="editor_colors_contrast">Contrasto</string>
+    <string name="editor_colors_gamma">Gamma</string>
+    <string name="editor_colors_saturation">Saturazione</string>
+    <string name="editor_colors_tone">Tono</string>
+    <string name="editor_colors_reset">Reset</string>
+    <string name="editor_select_all">Tutti/Nessuno</string>
+    <string name="editor_select_object">Oggetto</string>
+    <string name="editor_select_object_desc">Toccare l\'oggetto che si desidera selezionare.</string>
+    <string name="editor_select_circle">Cerchio</string>
+    <string name="editor_select_circle_desc">Crea un cerchio di selezione trascinando un cerchio sullo schermo.</string>
+    <string name="editor_select_rect">Rettangolo</string>
+    <string name="editor_select_rect_desc">Creare un rettangolo di selezione trascinando un rettangolo sullo schermo.</string>
+    <string name="editor_select_less">Meno</string>
+    <string name="editor_select_more">Di più</string>
+    <string name="editor_transform_clone">Copia</string>
+    <string name="editor_transform_delete">Eliminare</string>
+    <string name="editor_transform_move">Spostare</string>
+    <string name="editor_transform_rotate">Ruota</string>
+    <string name="editor_transform_scale">Scala</string>
+    <string name="editor_edit_undo">Undo</string>
+    <string name="editor_edit_visualisation">Visualizzazione</string>
+    <string name="editor_deselect">Deseleziona</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">Annulla operazione</string>
+    <string name="enter_filename">Inserisci il nome del file</string>
+    <string name="failed">Elaborazione fallita, i dati scansionati sono andati persi!</string>
+    <string name="finished">Operazione finita</string>
+    <string name="paused">Scansione in pausa</string>
+    <string name="postprocessing">Rielaborazione del modello…</string>
+    <string name="saving">Salvataggio del modello…</string>
+    <string name="turn_off">È possibile uscire dall\'applicazione senza perdere dati.</string>
+    <string name="warning">Avvertimento</string>
+    <string name="working">L\'applicazione funziona, per favore non spegnere il dispositivo e non avviare un\'altra applicazione AR.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">Analisi delle foto</string>
+    <string name="event_features">Problemi di rilevamento del movimento rilevati</string>
+    <string name="event_convert">Conversione dei dati</string>
+    <string name="event_image">Conversione dei dati</string>
+    <string name="event_merge">Unire i risultati</string>
+    <string name="event_process">Modello di elaborazione</string>
+    <string name="event_simplify">Semplificazione della geometria</string>
+    <string name="event_unwrap">Srotolamento delle texture</string>
+    <string name="scan_discard">Questa azione annullerà l\'avanzamento della scansione.</string>
+    <string name="scan_finish">Il salvataggio terminerà la scansione.</string>
+    <string name="scan_rewind">Riavvolgere il processo di scansione ad uno stato da cui si vuole continuare.</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm - Cameretta</string>
+    <string name="scan_2cm">2 cm - Interiore</string>
+    <string name="scan_4cm">4 cm - Esterno</string>
+    <string name="scan_8cm">8 cm - Scansione veloce</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="videoshot">Video rotante</string>
+
+    <string-array name="shares">
+        <item>Finestra di dialogo Android</item>
+        <item>Convertitore online</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">Diametro</string>
+    <string name="fd_length">Lungo</string>
+    <string name="fd_volume">Volume</string>
+    <string name="fd_write_scan_desc">Descrivi la scansione</string>
+    <string name="fd_select_scan_type">Seleziona il tipo di scansione</string>
+    <string name="fd_scan_type_trunk">Tribù</string>
+    <string name="fd_scan_type_stack">Shock</string>
+    <string name="fd_scan_type_transport">Trasporto</string>
+    <string name="fd_scan_type_tree">Albero</string>
+    <string name="fd_scan_type_other">Altro</string>
+    <string name="fd_scan_limit">Raggiunto il numero massimo di scansioni. Cancella alcune scansioni per continuare o contatta office@forestdesign.ro per ulteriori informazioni.</string>
+</resources>

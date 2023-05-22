@@ -1,0 +1,1 @@
+#define jpeg_ jpegturbo_

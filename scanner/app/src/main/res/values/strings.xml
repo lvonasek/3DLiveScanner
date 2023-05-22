@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- File Manager !-->
+    <string name="app_name" translatable="false">3D Live Scanner</string>
+    <string name="no_data">No 3D models</string>
+    <string name="migrating_data">Migrating data into a new folder, please wait…</string>
+    <string name="name_exists">A model with the entered name already exists.</string>
+    <string name="invalid_name">Invalid file name!</string>
+    <string name="delete">Delete data</string>
+    <string name="capture">Scan</string>
+    <string name="settings">Settings</string>
+    <string name="scene_res">Choose capturing resolution</string>
+    <string name="jump">The app detected invalid motion tracking data. Please check that device shows correct position and then click on record icon to continue scanning.</string>
+    <string name="move">Move the device around to start scanning.</string>
+    <string name="continue_question">Do you want to continue?</string>
+    <string name="info">By using this app, you agree with our #BEGIN#privacy policy#END#.\n\nAll data is saved in the \"Models\" folder within your mobile device\'s internal storage.</string>
+    <string name="share_via">Share via</string>
+    <string name="postprocess">Postprocess</string>
+    <string name="wait">Please wait</string>
+    <string name="export">Export data</string>
+    <string name="folder_new">New folder</string>
+    <string name="folder_up">(Parent folder)</string>
+    <string name="data_saved">Data saved as</string>
+    <string name="lowend_device">Your device is not certificated with Google Depth API. The app performance might be limited.</string>
+    <string name="permissions_required">For 3D scanning functionality the camera and storage permissions are requested.</string>
+    <string name="policy_accepted">I read and accept the privacy policy</string>
+    <string name="more_items">More items</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_details">In comparison to the free version, the paid version offers more settings, no ads and possibility to capture a dataset. Using that you can:\n- export floorplan\n- export raw pointcloud</string>
+    <string name="storage_bug">The app has detected that your device is affected by an Android bug that prevents access to some data. The app cannot work properly until the problem get resolved.\n\nThis problem can be resolved manually only.</string>
+    <string name="resolve_manually">Resolve the problem</string>
+    <string name="show_normals">Show normals</string>
+    <string name="photo_mode">Photo mode</string>
+
+    <!-- Sketchfab uploader !-->
+    <string name="description">Description:</string>
+    <string name="model_name">Model Name:</string>
+    <string name="sketchfab_dialog_title">Upload to Sketchfab</string>
+    <string name="sketchfab_pro">Note that for size over 100 MB, a Sketchfab PRO account is required, otherwise the upload may fail.</string>
+    <string name="sketchfab_upload_ready">Model is compressed and ready to upload!</string>
+    <string name="sketchfab_uploading">Uploading the model to Sketchfab…</string>
+    <string name="tags">Tags:</string>
+    <string name="upload">Upload</string>
+    <string name="upload_size_is">Total size to upload is</string>
+
+    <!-- Settings !-->
+    <string name="analyse_summary">Analyze photos before texturing and ensure only good photos are used.</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="sensor_usage">Sensors usage</string>
+    <string name="scan_postprocess">Scanning postprocess</string>
+    <string name="scan_visualisations">Scanning visualisations</string>
+    <string name="scan_parameters">Scanning parameters</string>
+    <string name="mode_realtime">Indoor/outdoor scanning</string>
+    <string name="mode_dataset">Capture a dataset</string>
+    <string name="mode_face">Face scanning</string>
+    <string name="scan_single_room">Single room scanning</string>
+    <string name="scan_large_interior">Large interior scanning</string>
+    <string name="scan_exterior">Exterior scanning</string>
+    <string name="export_floorplan">Export as floorplan</string>
+    <string name="export_pointcloud">Export as pointcloud</string>
+    <string name="export_model">Export as 3D model</string>
+    <string name="profile_resolution">Resolution</string>
+    <string name="poisson">Poisson reconstruction</string>
+    <string name="poisson_summary">Enable postprocessing algorithm to fix holes in model geometry, note that this algorithm does not work well with open spaces and it can make postprocessing longer.</string>
+    <string name="textures">Limit texture count</string>
+    <string name="textures_summary">Limits the amount of textures. More textures provides better visual quality.</string>
+    <string-array name="textures_names">
+        <item>Single texture</item>
+        <item>Max 4 textures</item>
+        <item>Do not limit</item>
+    </string-array>
+    <string name="anchor">Show anchors during scanning</string>
+    <string name="anchor_summary">Anchors are used to stabilize tracking of the device position.</string>
+    <string name="grid">Show floor grid</string>
+    <string name="grid_summary">Grid makes it easier to understand the 3D space.</string>
+    <string name="camera">Show camera data during scanning</string>
+    <string name="camera_summary">Showing camera produces additional information about the scanning process, however it could cause device overheating and lower scanning performance.</string>
+    <string name="offset">Add offset to the geometry</string>
+    <string name="offset_summary">Adding offset to the geometry enables to scan thin objects from both sides. This option makes the geometry less accurate.</string>
+    <string name="depth_sensor">Use depth sensor</string>
+    <string name="depth_sensor_summary">Active depth sensor is more accurate and scans more details.</string>
+    <string name="gps">Use GPS to tag the position</string>
+    <string name="gps_summary">Using a GPS tag is possible to show on the map where the model was captured.</string>
+    <string name="fullhd">Capture fullHD photos</string>
+    <string name="fullhd_summary">Capturing fullHD photos into dataset enables you to use the data in photogrammetry software. Note that this option slows down the scanning process.</string>
+    <string name="align_pose">Align device pose</string>
+    <string name="align_pose_summary">Adjusts device pose to increase the texture quality. This option makes capturing much slower.</string>
+    <string name="flash_light">Use flashlight</string>
+    <string name="flash_light_summary">Flashlight makes easier scanning in dark places.</string>
+    <string name="decimation">Decrease polygon count</string>
+    <string name="decimation_summary">As a part of postprocessing there is a process called decimation which decreases amount of polygons.</string>
+    <string-array name="decimation_names">
+        <item>Maximal detail</item>
+        <item>Optimal for VR</item>
+        <item>Low polygon count</item>
+    </string-array>
+    <string name="limit">Limit scanning distance</string>
+    <string name="limit_summary">By limiting scanning distance it is easier to scan only part of the object and filter far depth data with lower accuracy.</string>
+    <string-array name="limit_names">
+        <item>1 meter - objects only</item>
+        <item>2 meters - best precision</item>
+        <item>4 meters - fast scanning</item>
+        <item>No software limit</item>
+    </string-array>
+    <string name="noise">Noise filter</string>
+    <string name="noise_summary">Using noise filter reduces amount of wrong geometry in the scan. Note that it decreases the speed of scanning.</string>
+    <string-array name="noise_names">
+        <item>No noise filter</item>
+        <item>Normal noise filter</item>
+        <item>Aggressive noise filter</item>
+    </string-array>
+    <string name="clearing">Space clearing</string>
+    <string name="clearing_summary">This feature clears data from scene which were only temporarily visible.</string>
+
+    <!-- Editor !-->
+    <string name="editor_main_colors">Colors</string>
+    <string name="editor_main_select">Select</string>
+    <string name="editor_main_transform">Transform</string>
+    <string name="editor_main_edit">Edit</string>
+    <string name="editor_colors_contrast">Contrast</string>
+    <string name="editor_colors_gamma">Gamma</string>
+    <string name="editor_colors_saturation">Saturation</string>
+    <string name="editor_colors_tone">Tone</string>
+    <string name="editor_colors_reset">Reset</string>
+    <string name="editor_select_all">All/None</string>
+    <string name="editor_select_object">Object</string>
+    <string name="editor_select_object_desc">Tap on the object you want to select.</string>
+    <string name="editor_select_circle">Circle</string>
+    <string name="editor_select_circle_desc">Create selection circle by dragging a circle on screen.</string>
+    <string name="editor_select_rect">Rectangle</string>
+    <string name="editor_select_rect_desc">Create selection rectangle by dragging a rectangle on screen.</string>
+    <string name="editor_select_less">Less</string>
+    <string name="editor_select_more">More</string>
+    <string name="editor_transform_clone">Copy</string>
+    <string name="editor_transform_delete">Delete</string>
+    <string name="editor_transform_move">Move</string>
+    <string name="editor_transform_rotate">Rotate</string>
+    <string name="editor_transform_scale">Scale</string>
+    <string name="editor_edit_undo">Undo</string>
+    <string name="editor_edit_visualisation">Visualisation</string>
+    <string name="editor_deselect">Deselect</string>
+
+    <!-- Service !-->
+    <string name="action_cancel">Cancel operation</string>
+    <string name="enter_filename">Enter the file name</string>
+    <string name="failed">Processing failed, scanned data was lost!</string>
+    <string name="finished">Operation finished</string>
+    <string name="paused">Scanning paused</string>
+    <string name="postprocessing">Postprocessing the model…</string>
+    <string name="saving">Saving the model…</string>
+    <string name="turn_off">You can exit the app without losing data.</string>
+    <string name="warning">Warning</string>
+    <string name="working">The app is working, please do not turn off the device and do not start another AR app.</string>
+
+    <!-- Event !-->
+    <string name="event_analyse">Photos analysis</string>
+    <string name="event_features">Motion tracking detected issues</string>
+    <string name="event_convert">Converting data</string>
+    <string name="event_image">Processing photo</string>
+    <string name="event_merge">Merging results</string>
+    <string name="event_process">Processing model</string>
+    <string name="event_simplify">Simplifying geometry</string>
+    <string name="event_unwrap">Unwrapping textures</string>
+    <string name="scan_discard">This action will discard the scan progress.</string>
+    <string name="scan_finish">Saving will finish the scanning.</string>
+    <string name="scan_rewind">Rewind the scan process to a state from which you want to continue.</string>
+
+    <!-- Scan dialog !-->
+    <string name="scan_1cm">1 cm - Small room</string>
+    <string name="scan_2cm">2 cm - Interior</string>
+    <string name="scan_4cm">4 cm - Exterior</string>
+    <string name="scan_8cm">8 cm - Fast scan</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="videoshot">Rotating video</string>
+
+    <string-array name="shares">
+        <item>Android dialog</item>
+        <item>Online convertor</item>
+        <item>Sketchfab</item>
+    </string-array>
+
+    <string-array name="empty">
+    </string-array>
+
+    <!-- Branded apps texts !-->
+    <string name="fd_diameter">Diameter</string>
+    <string name="fd_length">Length</string>
+    <string name="fd_volume">Volume</string>
+    <string name="fd_write_scan_desc">Write scan description</string>
+    <string name="fd_select_scan_type">Select scan type</string>
+    <string name="fd_scan_type_trunk">Trunk</string>
+    <string name="fd_scan_type_stack">Stack</string>
+    <string name="fd_scan_type_transport">Transport</string>
+    <string name="fd_scan_type_tree">Tree</string>
+    <string name="fd_scan_type_other">Others</string>
+    <string name="fd_scan_limit">Maximal amount of scans reached. Delete some scans to continue or contact office@forestdesign.ro for more information.</string>
+</resources>

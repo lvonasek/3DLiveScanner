@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lvonasek.arcore3dscanner.main.Editor
+        android:id="@+id/editor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top" />
+
+    <RelativeLayout
+        android:id="@+id/layout_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#B0000000"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/editor0"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_back_small" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editor4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_main_edit"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor4a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_edit_undo"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor4b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_transform_clone"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor4c"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_transform_delete"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor4d"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_edit_visualisation"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editor1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_main_select"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_all"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_object"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1c"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_circle"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1d"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_rect"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1e"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_less"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor1f"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_select_more"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editor2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_main_colors"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor2a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_colors_contrast"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor2b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_colors_gamma"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor2c"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_colors_saturation"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor2d"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_colors_tone"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor2e"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_colors_reset"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editor3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_main_transform"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_transform_move"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor3b"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_transform_rotate"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/editor3c"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#B0000000"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/editor_transform_scale"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/editorSeek"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8000"
+                style="@android:style/Widget.Holo.SeekBar"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/editorX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/editorY"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/editorZ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/editorMsg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1000"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/editorDeselect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/editor_deselect"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
