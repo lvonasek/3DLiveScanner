@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
     <com.lvonasek.gles.GLESSurfaceView
@@ -174,9 +175,11 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_undo"
-                android:text="" />
+                android:text=""
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/toggle_button"
@@ -185,6 +188,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_pause"
                 android:text="" />
@@ -196,6 +200,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_save"
                 android:text="" />
@@ -218,9 +223,11 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_arrow_up"
-                android:text="" />
+                android:text=""
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
     </LinearLayout>
 
@@ -241,6 +248,7 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_modeorbit"
             android:text=""/>
@@ -252,6 +260,7 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_mode2d"
             android:text=""/>

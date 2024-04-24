@@ -47,6 +47,9 @@ LOCAL_SRC_FILES := ../../../../../common/arcore/arcore.cc \
                    renderer.cc
 
 LOCAL_LDLIBS    := -llog -lGLESv2 -L$(SYSROOT)/usr/lib -lz -landroid -lmediandk
+LOCAL_DISABLE_FATAL_LINKER_WARNINGS := true
+
+
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-add-path, $(PROJECT_ROOT))
