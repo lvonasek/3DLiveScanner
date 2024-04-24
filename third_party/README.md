@@ -3,7 +3,7 @@
 * glm (MIT Licence) - https://github.com/g-truc/glm
 * libjpeg-turbo (multiple BSD licences) - https://github.com/libjpeg-turbo/libjpeg-turbo
 * libpng (PNG Reference Library License version 2) - https://github.com/glennrp/libpng
-* OpenCV (Apache License) - https://github.com/opencv/opencv
+* OpenCV 4.5.1 (Apache License) - https://github.com/opencv/opencv
 * PoissonRecon (MIT Licence) - https://github.com/mkazhdan/PoissonRecon
 
 # Closed source libraries
