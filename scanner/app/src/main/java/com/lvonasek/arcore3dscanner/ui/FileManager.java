@@ -265,9 +265,7 @@ public class FileManager extends AbstractActivity implements View.OnClickListene
   protected void setupPermissions() {
     String[] permissions = {
             Manifest.permission.CAMERA,
-            Manifest.permission.INTERNET,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE
+            Manifest.permission.INTERNET
     };
 
     boolean ok = true;
@@ -358,44 +356,37 @@ public class FileManager extends AbstractActivity implements View.OnClickListene
   }
 
   @Override
-  public void onClick(View v)
-  {
-    switch (v.getId()) {
-      case R.id.delete:
-        mAdapter.deleteModel();
-        break;
-      case R.id.position:
-        mAdapter.showPosition();
-        break;
-      case R.id.rename:
-        mAdapter.rename();
-        break;
-      case R.id.share:
-        mAdapter.shareModel();
-        break;
+  public void onClick(View v) {
+    int id = v.getId();
 
-      case R.id.add_button:
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
-        if (pref.getBoolean(getString(R.string.pref_gps), false)) {
-          String[] permissions = {
-                  Manifest.permission.ACCESS_COARSE_LOCATION,
-                  Manifest.permission.ACCESS_FINE_LOCATION
-          };
-          onPermissionSuccess = this::startScanning;
-          askForPermissions(permissions);
-        } else {
-          startScanning();
-        }
-        break;
-      case R.id.service_cancel:
-        Service.reset(this);
-        System.exit(0);
-        break;
-      case R.id.settings:
-        startActivity(new Intent(this, Settings.class));
-        break;
+    if (id == R.id.delete) {
+      mAdapter.deleteModel();
+    } else if (id == R.id.position) {
+      mAdapter.showPosition();
+    } else if (id == R.id.rename) {
+      mAdapter.rename();
+    } else if (id == R.id.share) {
+      mAdapter.shareModel();
+    } else if (id == R.id.add_button) {
+      SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+      if (pref.getBoolean(getString(R.string.pref_gps), false)) {
+        String[] permissions = {
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.ACCESS_FINE_LOCATION
+        };
+        onPermissionSuccess = this::startScanning;
+        askForPermissions(permissions);
+      } else {
+        startScanning();
+      }
+    } else if (id == R.id.service_cancel) {
+      Service.reset(this);
+      System.exit(0);
+    } else if (id == R.id.settings) {
+      startActivity(new Intent(this, Settings.class));
     }
   }
+
 
   private void startScanning()
   {

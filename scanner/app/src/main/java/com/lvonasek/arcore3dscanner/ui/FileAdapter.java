@@ -23,8 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.core.content.FileProvider;
-
 import com.lvonasek.arcore3dscanner.BuildConfig;
+
+
 import com.lvonasek.arcore3dscanner.R;
 import com.lvonasek.arcore3dscanner.main.Exporter;
 import com.lvonasek.arcore3dscanner.main.Main;

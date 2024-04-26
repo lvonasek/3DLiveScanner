@@ -32,7 +32,7 @@ import android.widget.TextView;
 
 import androidx.core.content.FileProvider;
 
-import com.lvonasek.arcore3dscanner.BuildConfig;
+
 import com.lvonasek.arcore3dscanner.R;
 import com.lvonasek.arcore3dscanner.sketchfab.OAuth;
 import com.lvonasek.arcore3dscanner.ui.AbstractActivity;
@@ -43,6 +43,7 @@ import com.lvonasek.record.Recorder;
 import com.lvonasek.utils.Compass;
 import com.lvonasek.utils.Compatibility;
 import com.lvonasek.utils.GPS;
+import com.lvonasek.arcore3dscanner.BuildConfig;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -384,8 +385,9 @@ public class Main extends AbstractActivity implements View.OnClickListener,
 
   @Override
   public void onClick(View v) {
-    switch (v.getId()) {
-    case R.id.toggle_button:
+    int id = v.getId();
+
+    if (id == R.id.toggle_button) {
       if (mPhotoMode) {
         JNI.onToggleButtonClicked(true);
       } else {
@@ -393,27 +395,23 @@ public class Main extends AbstractActivity implements View.OnClickListener,
         JNI.onToggleButtonClicked(m3drRunning);
       }
       runOnUiThread(() -> mHandMotionView.setVisibility(View.GONE));
-      break;
-    case R.id.clear_button:
+    } else if (id == R.id.clear_button) {
       pauseScanning();
       if (JNI.getScanSize() > 0) {
         CommonDialogs.confirmDialog(this, R.string.scan_discard, JNI::onClearButtonClicked);
       }
-      break;
-    case R.id.view_button:
+    } else if (id == R.id.view_button) {
       boolean visible = mLayoutQuickMenu.getVisibility() == View.VISIBLE;
       mLayoutQuickMenu.setVisibility(visible ? View.GONE : View.VISIBLE);
       mViewButton.setImageResource(visible ? R.drawable.ic_arrow_up : R.drawable.ic_arrow_down);
-      break;
-    case R.id.undo_button:
+    } else if (id == R.id.undo_button) {
       pauseScanning();
       mIndicators.setOverrideMessage(getString(R.string.scan_rewind));
       mLayoutRec.setVisibility(View.GONE);
       mLayoutUndo.setVisibility(View.VISIBLE);
       mLayoutQuickMenu.setVisibility(View.GONE);
       mViewButton.setImageResource(R.drawable.ic_arrow_up);
-      break;
-    case R.id.undo_apply:
+    } else if (id == R.id.undo_apply) {
       mIndicators.setOverrideMessage(null);
       mLayoutUndo.setVisibility(View.GONE);
       mLayoutWait.setVisibility(View.VISIBLE);
@@ -424,8 +422,7 @@ public class Main extends AbstractActivity implements View.OnClickListener,
           mLayoutWait.setVisibility(View.GONE);
         });
       }).start();
-      break;
-    case R.id.undo_cancel:
+    } else if (id == R.id.undo_cancel) {
       mIndicators.setOverrideMessage(null);
       new Thread(() -> {
         JNI.onUndoPreviewUpdate(Integer.MAX_VALUE);
@@ -434,20 +431,15 @@ public class Main extends AbstractActivity implements View.OnClickListener,
           mLayoutUndo.setVisibility(View.GONE);
         });
       }).start();
-      break;
-    case R.id.undo_back:
+    } else if (id == R.id.undo_back) {
       new Thread(() -> JNI.onUndoPreviewUpdate(-1)).start();
-      break;
-    case R.id.undo_back_fast:
+    } else if (id == R.id.undo_back_fast) {
       new Thread(() -> JNI.onUndoPreviewUpdate(-10)).start();
-      break;
-    case R.id.undo_fwd:
+    } else if (id == R.id.undo_fwd) {
       new Thread(() -> JNI.onUndoPreviewUpdate(1)).start();
-      break;
-    case R.id.undo_fwd_fast:
+    } else if (id == R.id.undo_fwd_fast) {
       new Thread(() -> JNI.onUndoPreviewUpdate(10)).start();
-      break;
-    case R.id.save_button:
+    } else if (id == R.id.save_button) {
       if (isFaceModeOn(this)) {
         save();
         finish();
@@ -461,12 +453,13 @@ public class Main extends AbstractActivity implements View.OnClickListener,
           }
         });
       }
-      break;
     }
+
     if (!mPhotoMode) {
       mToggleButton.setImageResource(m3drRunning ? R.drawable.ic_pause : R.drawable.ic_record);
     }
   }
+
 
   @Override
   public boolean onKeyUp(int keyCode, KeyEvent keyEvent) {

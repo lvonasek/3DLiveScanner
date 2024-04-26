@@ -263,6 +263,10 @@ public abstract class AbstractActivity extends Activity {
       onPermissionSuccess = null;
       onPermissionFail = null;
     }
+    else
+    {
+      super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
   }
 
   protected void askForPermissions(String[] permissions) {

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.lvonasek.arcore3dscanner"
           android:versionCode="220022"
-          android:versionName="2022-build_0022">
-
+          android:versionName="2022-build_0022"
+         package="com.lvonasek.arcore3dscanner">
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -29,7 +28,8 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".ui.Initializator" android:label="@string/app_name" android:launchMode="singleTop" >
+        <activity android:name="com.lvonasek.arcore3dscanner.ui.Initializator" android:label="@string/app_name" android:launchMode="singleTop"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -69,14 +69,15 @@
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.scan.zip"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".main.Main"/>
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.Settings"/>
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".sketchfab.Uploader"/>
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.FileManager"/>
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".ui.Uploader"/>
-        <service android:name=".ui.Service"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.main.Main"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.ui.Settings"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.sketchfab.Uploader"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.ui.FileManager"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.ui.Uploader"/>
+        <service android:name="com.lvonasek.arcore3dscanner.ui.Service"/>
 
-        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name=".sketchfab.OAuth">
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.lvonasek.arcore3dscanner.sketchfab.OAuth"
+            android:exported="true">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -86,7 +87,7 @@
         </activity>
 
         <activity
-            android:name=".vr.CardboardActivity"
+            android:name="com.lvonasek.arcore3dscanner.vr.CardboardActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/VrActivityTheme"
@@ -97,14 +98,15 @@
         </activity>
 
         <activity
-            android:name=".vr.DaydreamActivity"
+            android:name="com.lvonasek.arcore3dscanner.vr.DaydreamActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/VrActivityTheme"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:enableVrMode="@string/gvr_vr_mode_component"
             android:resizeableActivity="false"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
@@ -114,7 +116,7 @@
         </activity>
 
         <provider
-            android:name=".GenericFileProvider"
+            android:name="com.lvonasek.arcore3dscanner.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
